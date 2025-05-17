@@ -1,0 +1,10 @@
+query GetClientRelatives($clientID: ID!) {
+  client(id: $clientID) {
+    relatives {
+      id
+      relationType
+      name
+      age
+    }
+  }
+}
