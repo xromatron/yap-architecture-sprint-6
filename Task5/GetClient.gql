@@ -1,0 +1,20 @@
+query GetClientByID($clientID: ID!) {
+  client(id: $clientID) {
+    id
+    name
+    age
+    documents {
+      id
+      type
+      number
+      issueDate
+      expiryDate
+    }
+    relatives {
+      id
+      relationType
+      name
+      age
+    }
+  }
+}
